@@ -8,7 +8,7 @@ export function managePresents(state = {numberOfPresents: 0}, action){
         //     numberOfPresents: +1
         // }
 
-        let presents = {...state, state.numberOfPresents: +1}
+        let presents = {...state, numberOfPresents: state.numberOfPresents +1}
 
         return presents
     } else {
